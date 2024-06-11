@@ -24,6 +24,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<ChatHub>("/chathub");
+
+app.MapHub<ChatHub>("/chathub");  //Redirige la solicitud del cliente hacia la clase ChatHub (si el cliente usa localhost1234/chathub)
 
 app.Run();

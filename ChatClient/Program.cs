@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 
 
-var connection = new HubConnectionBuilder().WithUrl("https://localhost:7232/chathub").Build(); 
+var connection = new HubConnectionBuilder().WithUrl("https://localhost:7232/chathub").Build(); //Construye la conexion al server hub
 
 void HandleMessage(string user, string message) //Armar cuerpo de mensaje
 {
